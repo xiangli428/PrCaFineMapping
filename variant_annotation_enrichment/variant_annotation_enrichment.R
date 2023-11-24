@@ -8,15 +8,13 @@ library(ggplot2)
 library(scales)
 library(Hmisc)
 
-setwd("~/Documents/github/PrCaFineMapping")
-
 registerDoParallel(22)
 
 #1. Enrichment of cistrome annotation
 variant_info = foreach(i = 1:22, .combine = "rbind") %dopar%
 {
   read.delim(gzfile(sprintf(
-    "results/variant_info_chr%d.txt.gz", i)), 
+    "../results/variant_info_chr%d.txt.gz", i)), 
     stringsAsFactors = F, check.names = F)
 }
 variant_info$trans_genes_TCGA[is.na(variant_info$trans_genes_TCGA)] = ""
@@ -81,7 +79,7 @@ p12 = ggarrange(plotlist = p[1:2],
 variant_info_in = foreach(i = 1:22, .combine = "rbind") %dopar%
 {
   read.delim(gzfile(sprintf(
-    "results/variant_info_in_chr%d.txt.gz", i)), 
+    "../results/variant_info_in_chr%d.txt.gz", i)), 
     stringsAsFactors = F, check.names = F)
 }
 variant_info_in$trans_genes_TCGA[is.na(variant_info_in$trans_genes_TCGA)] = ""
@@ -161,7 +159,7 @@ p[[3]] = ggplot(sub, aes(x = Annotation, y = Estimate,
   guides(fill = "none") +
   labs(x = "", y = "Effect size", color = TeX("$-log_{10}(P_{adj})$"))
 
-ggsave("variant_enrichment.pdf",
+ggsave("variant_annotation_enrichment.pdf",
        ggarrange(p12, p[[3]],
                  nrow = 2, ncol = 1,
                  labels = c("","C"),
