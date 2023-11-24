@@ -1,0 +1,11 @@
+NSF	Non-synonymous frameshift	A coding region variation where one allele in the set changes all downstream amino acids.
+NSM	Non-synonymous missense	A coding region variation where one allele in the set changes protein peptide.
+NSN	Non-synonymous nonsense	A coding region variation where one allele in the set changes to STOP codon (TER).
+SYN	Synonymous	A coding region variation where one allele in the set does not change the encoded amino acid.
+U3	In 3' UTR	Location is in an untranslated region (UTR).
+U5	In 5' UTR	Location is in an untranslated region (UTR).
+ASS	In acceptor splice site	In acceptor splice site
+DSS	In donor splice-site	In donor splice-site
+INT	In Intron	In Intron
+R3	In 3' gene region	In 3' gene region
+R5	In 5' gene region	In 5' gene region
