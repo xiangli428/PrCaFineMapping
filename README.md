@@ -1,6 +1,6 @@
 # Fine-mapping causal variants of prostate cancer using h2-D2
 
-This repository contains data and scripts to analyze fine-mapping results of prostate cancer (PrCa). The GWAS summary data is from a large meta-analysis of European ancestry (http://practical.icr.ac.uk/blog/?page_id=8164).
+This repository contains data and scripts to analyze fine-mapping results of prostate cancer (PrCa). The GWAS summary data is from a large meta-analysis of European ancestry (http://practical.icr.ac.uk/blog/?page_id=8164). In our analyses, the genome reference assembly is GRCh37 (hg19). 
 
 ## LD_block
 
