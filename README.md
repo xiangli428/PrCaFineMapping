@@ -53,7 +53,8 @@ and standard error of local heritability (estimated by $\beta^{\top} R \beta$).
 
 # Citation
 
-Li, X., Sham, P. C., & Zhang, Y. D. (2023). A novel bayesian fine-mapping model using a continuous global-local shrinkage prior with applications in prostate cancer analysis. medRxiv, 2023-08. https://www.medrxiv.org/content/10.1101/2023.08.04.23293456v2
+Li, X., Sham, P. C., & Zhang, Y. D. (2023). A Bayesian fine-mapping model using a continuous global-local shrinkage prior with applications in prostate cancer analysis. The American Journal of Human Genetics.
+https://doi.org/10.1016/j.ajhg.2023.12.007
 
 # Contact the Author
 
